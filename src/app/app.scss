@@ -1,0 +1,53 @@
+$tortuga-main: #F90;
+
+body {
+  font-family: "Courier New", Courier;
+  margin: 0;
+
+  /**
+   * HTML ELEMENTS
+   */
+  h1, h2, h3, h4 {
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  input {
+    padding: 5px;
+    width: 100%;
+  }
+
+  footer {
+    background: #555;
+    color: #FFF;
+    padding: 30px;
+    text-align: center;
+  }
+
+  /**
+   * GENERAL STYLES
+   */
+
+  .btn { border-radius: 0; }
+
+  .btn-primary {
+    background-color: $tortuga-main;
+    border: none;
+    transition: all .3s;
+
+    &:hover {
+      background-color: darken($tortuga-main, 15%);
+    }
+  }
+
+  /**
+   * PLACE SPECIFIC STYLES
+   */
+
+  #header {
+    background: #333;
+    color: #FFF;
+    padding: 5px 30px;
+  }
+
+}
